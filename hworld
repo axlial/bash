@@ -1,0 +1,3 @@
+#!/bin/bash
+# Это наш первый сценарий.
+echo 'Hello World!'

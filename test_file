@@ -1,0 +1,26 @@
+#!/bin/bash
+
+test_file () {
+
+FILE=example_
+
+if [ -e "$FILE" ] ; then
+	if [ -f "$FILE" ]; then
+  	echo "$FILE простой файл"
+     fi
+	if [ -d "$FILE" ]; then
+	echo "$FILE директория"
+     fi
+	if [ -r "$FILE" ]; then
+	echo "$FILE доступен для чтения"
+     fi
+else 
+       echo "$FILE не существует"
+       return 1
+fi
+
+}
+test_file
+
+echo "ping"
+

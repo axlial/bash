@@ -1,0 +1,18 @@
+#!/bin/bash
+# Программа вывода страницы с информацией о системе
+report_uptime () {
+uptime
+return
+}
+TITLE="System Information Report"
+cat << _EOF_ 
+<HTML>
+             <HEAD>
+             <TITLE>$TITLE</TITLE>
+             </HEAD>
+             <BODY>
+	     <H1> $(report_uptime) </H1>
+             </BODY>
+      </HTML>
+$(report_uptime)
+_EOF_

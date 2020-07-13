@@ -1,0 +1,7 @@
+#!/bin/bash
+x=2
+if [ $x = 5 ] ; then
+   echo "x равно 5"
+else
+   echo "x не равно 5"
+fi
