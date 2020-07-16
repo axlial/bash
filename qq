@@ -1,7 +1,0 @@
-#!/bin/bash
-# test-string: проверка значения строки
-
-if [ -z "$ANSWER" ]; then
-	echo "There is no answer." > /dev/null
-	exit 1
-fi
